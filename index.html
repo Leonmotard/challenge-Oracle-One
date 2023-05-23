@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+	<script type="text/javascript" src="functions.js"></script>
+
+	<title>Encriptador</title>
+</head>
+<body>
+
+	<header>
+		<img src="imagenes/logo.png" alt="logo Alura" class="logoalura">
+	</header>
+
+	<main>
+		<section>
+			<textarea placeholder="Ingrese el texto aquí" class="ingresotexto" id="textoIngresado"></textarea>
+
+			<div class="botones">
+				<input type="button" name="encriptar" value="Encriptar" id="botonEncriptar">
+				<input type="button" name="desencriptar" value="Desencriptar">
+			</div>
+
+		</section>
+
+		<section class="rectangulo">
+			<img src="imagenes/Muñeco.png" alt="persona observando un diamante con una lupa" class="munieco">		
+		</section>
+
+	</main>
+
+<script type="text/javascript">
+	var botonEncriptar = document.getElementById("botonEncriptar");
+
+	botonEncriptar.onclick = codificarString;
+
+
+</script>
+
+
+
+</body>
+</html>
