@@ -10,8 +10,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
-	<script type="text/javascript" src="functions.js"></script>
-
 	<title>Encriptador</title>
 </head>
 <body>
@@ -24,6 +22,12 @@
 		<section>
 			<textarea placeholder="Ingrese el texto aquí" class="ingresotexto" id="textoIngresado"></textarea>
 
+			<div class="advertencia">
+				<p>
+					&#x26A0 Solo letras minúsculas y sin acentos
+				</p>
+			</div>
+
 			<div class="botones">
 				<input type="button" name="encriptar" value="Encriptar" id="botonEncriptar">
 				<input type="button" name="desencriptar" value="Desencriptar">
@@ -31,21 +35,31 @@
 
 		</section>
 
-		<section class="rectangulo">
-			<img src="imagenes/Muñeco.png" alt="persona observando un diamante con una lupa" class="munieco">		
+		<section class="rectangulo" id="rectangulo">
+
+			<div class="mensajeVacio">
+
+				<h1>Ningún mensaje fue encontrado</h1>
+
+				<p>Ingrese el texto que desees encriptar o desencriptar.</p>
+
+			</div>
+
+			<div >
+				<p class="mensajeEncriptado">					
+				</p>
+			</div>
+
+			<div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+
 		</section>
 
 	</main>
 
-<script type="text/javascript">
-	var botonEncriptar = document.getElementById("botonEncriptar");
 
-	botonEncriptar.onclick = codificarString;
-
-
-</script>
-
-
+<script type="text/javascript" src="functions.js"></script>
 
 </body>
 </html>

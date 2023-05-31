@@ -48,6 +48,44 @@ body{
 	opacity: 0.8;
 }
 
+.advertencia{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 8px;
+
+	position: absolute;
+	width: 250px;
+	height: 18px;
+	left: 240px;
+	top: 851px;
+}
+
+.advertencia p{
+
+	width: 220px;
+	height: 18px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 150%;
+
+	/* identical to box height, or 18px */
+
+	/* Gray/gray-400 */
+	color: #495057;
+
+	opacity: 0.8;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
 .botones{
 	display: flex;
 	flex-direction: row;
@@ -109,6 +147,7 @@ body{
 }
 
 .rectangulo{
+
 	/* Rectangle 1 */
 
 	position: absolute;
@@ -120,15 +159,109 @@ body{
 	/* White */
 	background: #FFFFFF;
 
+	/*background image*/
+	background-image: url("imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: none;
 	/* shadow */
 	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 	border-radius: 32px;
+
+	margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
 }
 
-.munieco{
+
+
+.mensajeVacio{
+	/* Auto layout */
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 16px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+
+	/* or 29px */
+	text-align: center;
+
+	/* Gray/gray-500 */
+	color: #343A40;
+
+
 	position: absolute;
 	width: 336px;
-	height: 304px;
+	height: 122px;
 	left: 32px;
-	top: 243px;
+	top: 650px;
+
+
+}
+
+.mensajeVacio p {
+	width: 336px;
+	height: 48px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+
+	/* or 24px */
+	text-align: center;
+
+	/* Gray/gray-400 */
+	color: #495057;
+
+
+	/* Inside auto layout */
+	flex: ;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+}
+
+/*Parrafo que mostrará el mensaje encriptado o desencriptado al usuario*/
+
+.mensajeEncriptado{
+	position: absolute;
+	width: 336px;
+	height: 781px;
+	left: 32px;
+	top: 32px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 150%;
+	text-align: center;
+
+	/* or 36px */
+
+	/* Gray/gray-400 */
+	color: #495057;
+}
+
+/*Botón copiar*/
+
+
+.copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 32px;
+    margin-top: 845px;
+    width: 336px;
 }
